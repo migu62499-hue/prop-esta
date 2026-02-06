@@ -8,6 +8,3 @@ def home():
 @app.route("/yes")
 def yes():
     return render_template("yes_page.html")
-
-if __name__ == "__main__":
-    app.run()
