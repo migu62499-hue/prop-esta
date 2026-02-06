@@ -1,0 +1,113 @@
+button {
+    font-size: 20px;
+    padding: 10px 25px;
+    margin: 10px;
+    cursor: pointer;
+
+    /* ✨ ANIMACIONES SUAVES */
+    transition: 
+        all 0.6s ease-in-out,
+        transform 0.4s ease,
+        font-size 0.6s ease;
+}
+
+.yes-button {
+    pointer-events: auto;
+    background-color: #ff4bc6;
+    color: rgb(255, 255, 255);
+}
+
+.no-button {
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    /* 🎯 CENTRADO TOTAL */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background-color: hsl(349, 100%, 91%);
+
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.yes-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gif {
+    width: 220px;
+    max-width: 80vw;
+    margin: 20px 0;
+
+    /* ✨ animación suave */
+    transition: 
+        transform 0.6s ease,
+        opacity 0.6s ease;
+}
+
+/* 💖 PÁGINA YES */
+.yes-page {
+    background-color: #ffffff;
+}
+
+.yes-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease;
+}
+
+.yes-gif {
+    width: 260px;
+    max-width: 80vw;
+    margin: 20px 0;
+    animation: popIn 1s ease;
+}
+
+.yes-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeIn 1.6s ease;
+}
+
+.yes-btn {
+    text-decoration: none;
+    background-color: #ff6f91;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.yes-btn:hover {
+    transform: scale(1.1);
+    background-color: #ff4f7b;
+}
+
+/* ✨ ANIMACIONES */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+

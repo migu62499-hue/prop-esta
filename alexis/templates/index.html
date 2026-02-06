@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pregunta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>¿Quieres ser mi san valentin?</h1>
+
+<img 
+    id="gif"
+    src="https://i.pinimg.com/originals/29/ab/05/29ab0501e778783e23ca6c508ce9a45d.gif"
+    alt="gif"
+>
+
+
+<button class="yes-button" onclick="handleYesClick()">Sí</button>
+<button class="no-button" onclick="handleNoClick()">No</button>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
